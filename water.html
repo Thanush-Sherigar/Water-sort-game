@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id = "game">
+            <div id = "menu">
+                <div class="box">
+                <div id = "menu-heading">WATER SORT PUZZLE</div>
+                <div class = "lvl" id = "easy" onclick = "OpenLevel(0);";>EASY</div>
+                <div class = "lvl" id = "medium" onclick = "OpenLevel(1);">MEDIUM</div>
+                <div class = "lvl" id = "hard" onclick = "OpenLevel(2);">HARD</div>
+                <div class = "lvl" id = "very-hard" onclick = "OpenLevel(3)">VERY HARD</div>
+                <div class = "lvl" id = "impossible" onclick = "OpenLevel(7);">IMPOSSIBLE</div>
+                <br><br><br>
+                <div id = "rules-btn" onclick = "ShowRules();">RULES</div>
+                </div>
+            </div>
+            <div id = "level"></div>
+            <div id = "rules-page">
+                <div id = "rules">
+                    <div id = "rules-heading">RULES</div>
+                    <div id = "rules-text">A game created by Thanush sharan and akash. <br>There will be some glasses , your task is to put the water with same color together! You can transfer different colored water from one glass to another only if the other glass is empty or its top most layer of water is of the same color as that of the one from which water is to be taken. The glass you have selected will be highlighted to prevent confusion. Restart button will take you back to the beginning of the level, also every time you open the same level the water will be shift<br></div>
+                    <div id = "back" onclick = "HideRules();">BACK</div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    <audio src="1.mp3" autoplay loop></audio>
+</body>
+</html>
